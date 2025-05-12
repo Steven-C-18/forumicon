@@ -13,7 +13,7 @@ class mu3_forum_icon extends container_aware_migration
 {
 	static public function depends_on()
 	{
-		return ['\steve\forumicon\migrations\mu1_forum_icon'];
+		return ['\steve\forumicon\migrations\mu2_forum_icon'];
 	}
 
 	public function update_data()
