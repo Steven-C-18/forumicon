@@ -1,0 +1,23 @@
+
+</fieldset>
+
+<fieldset>
+	<legend><i class="icon fa-flag acp-icon-resync fa-fw" aria-hidden="true"></i> {{ lang('ACP_FORUM_STEVE_ICON') }}</legend>
+		<dl>
+			<dt><label for="forum_steve_icon">{{ lang('ACP_FORUM_STEVE_ICON') ~ lang('COLON') }}</label><span><br><a href="https://fontawesome.com/v4/icons/" target="_blank"><i class="icon fa-link fa-fw"></i> {{ lang('ACP_FORUM_STEVE_ICON_EXP') }}</a></span></dt>
+			<dd><input id="forum_steve_icon" type="text" name="forum_steve_icon" value="{{ FORUM_STEVE_ICON }}" size="40" maxlength="255" />
+				&nbsp; <i id="forum_icon" class="icon {{ FORUM_STEVE_ICON }} fa" aria-hidden="true" style="font-size: {% if FORUM_STEVE_ICON_SIZE %}{{ FORUM_STEVE_ICON_SIZE }}{% else %}10{%endif %}px;color: #{{ FORUM_STEVE_ICON_COLOR }}"></i></dd>
+		</dl>
+		<dl>
+			<dt><label for="forum_steve_icon_size">{{ lang('ACP_FORUM_STEVE_ICON_SIZE') ~ lang('COLON') }}</label></dt>
+			<dd><input id="forum_steve_icon_size" type="number" name="forum_steve_icon_size" value="{{ FORUM_STEVE_ICON_SIZE }}" /> {{ lang('PIXEL') }}</dd>
+		</dl>
+		<dl style="overflow: visible;">
+			<dt><label for="forum_steve_icon_color">{{ lang('ACP_FORUM_STEVE_ICON_COLOR') ~ lang('COLON') }}</label></dt>
+			<dd><input id="forum_steve_icon_color" type="text" name="forum_steve_icon_color" value="{{ FORUM_STEVE_ICON_COLOR }}" maxlength="6" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="forum_steve_icon_as_image">{{ lang('ACP_FORUM_STEVE_ICON_AS_IMAGE') ~ lang('COLON') }}</label></dt>
+			<dd><input type="checkbox" class="checkbox" name="forum_steve_icon_as_image" id="forum_steve_icon_as_image" value="1" {% if FORUM_STEVE_ICON_AS_IMAGE %}checked="checked"{% endif %} /></dd>
+		</dl>
+</fieldset>

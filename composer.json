@@ -1,0 +1,34 @@
+{
+    "name": "steve/forumicon",
+    "type": "phpbb-extension",
+    "description": "Use Font Awesome icons next to Forum name or use it as the Forum image",
+    "homepage": "https://www.steven-clark.tech/",
+    "version": "1.0.2",
+    "time": "2025-05-15",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Steve",
+            "email": "",
+            "homepage": "https://www.steven-clark.tech/",
+            "role": "Author / Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "composer/installers": "~1.0.0",
+        "phpbb/phpbb": ">=3.3.14, <4.0.0@dev"
+    },
+    "extra": {
+        "display-name": "Forum FA Icon",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.3.0, <4.0.0@dev"
+        },
+        "version-check": {
+            "host": "www.phpbb.com",
+            "directory": "/customise/db/extension/phpbb_forum_fa_icon",
+            "filename": "version_check",
+            "ssl": true
+        }
+    }
+}

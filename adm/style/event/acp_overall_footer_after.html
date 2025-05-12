@@ -1,0 +1,11 @@
+{% if S_FORUM_STEVE_ICON %}
+<script>
+    $('#forum_steve_icon').on('keyup blur', function() {
+        $('#forum_icon').attr('class', 'icon ' + $(this).val());
+    });
+    $('#forum_steve_icon_color').on('keyup blur', function() {
+        $('#forum_icon').css('color', $(this).val());
+    });
+</script>
+{% INCLUDEJS '@steve_forumicon/jquery.minicolors.js' %}
+{% endif %}

@@ -1,0 +1,8 @@
+services:
+    steve.forumicon.listener:
+        class: steve\forumicon\event\main_listener
+        arguments:
+            - '@language'
+            - '@request'
+        tags:
+            - { name: event.listener }
